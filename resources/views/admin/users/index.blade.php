@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@
     @if ($users->isEmpty())
 
         <div class="alert alert-info">
-            Aucun utilisateur n'est enregistré.
+            Aucun utilisateur n'est enregistrÃ©.
         </div>
 
     @else
@@ -67,7 +67,7 @@
                                 <th>ID</th>
                                 <th>Nom</th>
                                 <th>Email</th>
-                                <th>Rôle</th>
+                                <th>RÃ´le</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>

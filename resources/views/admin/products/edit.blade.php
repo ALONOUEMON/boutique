@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Des erreurs sont présentes :</strong>
+            <strong>Des erreurs sont prÃ©sentes :</strong>
 
             <ul class="mb-0 mt-2">
                 @foreach ($errors->all() as $error)
@@ -80,7 +80,7 @@
 
                     <div class="col-md-6 mb-3">
                         <label for="price" class="form-label">
-                            Prix (€)
+                            Prix (â‚¬)
                         </label>
 
                         <input
@@ -134,7 +134,7 @@
                 <div class="mb-4">
 
                     <label class="form-label">
-                        Catégories
+                        CatÃ©gories
                     </label>
 
                     @foreach ($categories as $category)

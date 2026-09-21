@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -39,7 +39,7 @@
                 href="{{ route('cart.index') }}"
                 class="btn btn-outline-light"
             >
-                🛒 Panier
+                ðŸ›’ Panier
             </a>
 
             <form
@@ -53,7 +53,7 @@
                     type="submit"
                     class="btn btn-danger"
                 >
-                    Déconnexion
+                    DÃ©connexion
                 </button>
             </form>
 
@@ -88,7 +88,7 @@
                 <div class="card-body text-center">
 
                     <div class="display-4 mb-3">
-                        🛍️
+                        ðŸ›ï¸
                     </div>
 
                     <h4>
@@ -96,7 +96,7 @@
                     </h4>
 
                     <p class="text-muted">
-                        Découvrez nos produits et ajoutez-les à votre panier.
+                        DÃ©couvrez nos produits et ajoutez-les Ã  votre panier.
                     </p>
 
                     <a
@@ -120,7 +120,7 @@
                 <div class="card-body text-center">
 
                     <div class="display-4 mb-3">
-                        🛒
+                        ðŸ›’
                     </div>
 
                     <h4>
@@ -128,7 +128,7 @@
                     </h4>
 
                     <p class="text-muted">
-                        Consultez les produits présents dans votre panier.
+                        Consultez les produits prÃ©sents dans votre panier.
                     </p>
 
                     <a
@@ -152,7 +152,7 @@
                 <div class="card-body text-center">
 
                     <div class="display-4 mb-3">
-                        📦
+                        ðŸ“¦
                     </div>
 
                     <h4>

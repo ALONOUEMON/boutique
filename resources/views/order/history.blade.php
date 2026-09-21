@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -25,7 +25,7 @@
             href="{{ url('/') }}"
             class="btn btn-secondary"
         >
-            Retour à la boutique
+            Retour Ã  la boutique
         </a>
 
     </div>
@@ -40,7 +40,7 @@
                 <h3>Aucune commande</h3>
 
                 <p class="text-muted">
-                    Vous n'avez pas encore passé de commande.
+                    Vous n'avez pas encore passÃ© de commande.
                 </p>
 
                 <a
@@ -90,7 +90,7 @@
 
                                 <td>
                                     <strong>
-                                        {{ number_format($order->total, 2, ',', ' ') }} €
+                                        {{ number_format($order->total, 2, ',', ' ') }} â‚¬
                                     </strong>
                                 </td>
 
@@ -105,19 +105,19 @@
                                     @elseif($order->status === 'paid')
 
                                         <span class="badge bg-success">
-                                            Payée
+                                            PayÃ©e
                                         </span>
 
                                     @elseif($order->status === 'shipped')
 
                                         <span class="badge bg-primary">
-                                            Expédiée
+                                            ExpÃ©diÃ©e
                                         </span>
 
                                     @elseif($order->status === 'cancelled')
 
                                         <span class="badge bg-danger">
-                                            Annulée
+                                            AnnulÃ©e
                                         </span>
 
                                     @else
@@ -131,7 +131,7 @@
                                 </td>
 
                                 <td>
-                                    {{ $order->created_at->format('d/m/Y à H:i') }}
+                                    {{ $order->created_at->format('d/m/Y Ã  H:i') }}
                                 </td>
 
                                 <td>

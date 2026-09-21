@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@
     @if ($products->isEmpty())
 
         <div class="alert alert-info">
-            Aucun produit n'est enregistré.
+            Aucun produit n'est enregistrÃ©.
         </div>
 
     @else
@@ -68,7 +68,7 @@
                                 <th>Nom</th>
                                 <th>Prix</th>
                                 <th>Stock</th>
-                                <th>Catégories</th>
+                                <th>CatÃ©gories</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -90,7 +90,7 @@
                                 </td>
 
                                 <td>
-                                    {{ number_format($product->price, 2, ',', ' ') }} €
+                                    {{ number_format($product->price, 2, ',', ' ') }} â‚¬
                                 </td>
 
                                 <td>
@@ -108,7 +108,7 @@
                                     @empty
 
                                         <span class="text-muted">
-                                            Aucune catégorie
+                                            Aucune catÃ©gorie
                                         </span>
 
                                     @endforelse

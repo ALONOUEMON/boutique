@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Détail de la commande</title>
+    <title>DÃ©tail de la commande</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -61,7 +61,7 @@
             @else
 
                 <p class="mb-0 text-muted">
-                    Utilisateur supprimé
+                    Utilisateur supprimÃ©
                 </p>
 
             @endif
@@ -82,7 +82,7 @@
             <div class="row">
 
                 <div class="col-md-4">
-                    <strong>Numéro :</strong>
+                    <strong>NumÃ©ro :</strong>
                     #{{ $order->id }}
                 </div>
 
@@ -104,19 +104,19 @@
                     @elseif ($order->status === 'paid')
 
                         <span class="badge bg-success">
-                            Payée
+                            PayÃ©e
                         </span>
 
                     @elseif ($order->status === 'shipped')
 
                         <span class="badge bg-primary">
-                            Expédiée
+                            ExpÃ©diÃ©e
                         </span>
 
                     @elseif ($order->status === 'cancelled')
 
                         <span class="badge bg-danger">
-                            Annulée
+                            AnnulÃ©e
                         </span>
 
                     @else
@@ -139,7 +139,7 @@
     <div class="card shadow-sm mb-4">
 
         <div class="card-header">
-            <strong>Produits commandés</strong>
+            <strong>Produits commandÃ©s</strong>
         </div>
 
         <div class="card-body p-0">
@@ -163,7 +163,7 @@
                             <tr>
                                 <th>Produit</th>
                                 <th>Prix unitaire</th>
-                                <th>Quantité</th>
+                                <th>QuantitÃ©</th>
                                 <th>Sous-total</th>
                             </tr>
 
@@ -179,12 +179,12 @@
                                     @if ($item->product)
                                         {{ $item->product->name }}
                                     @else
-                                        Produit supprimé
+                                        Produit supprimÃ©
                                     @endif
                                 </td>
 
                                 <td>
-                                    {{ number_format($item->price, 2, ',', ' ') }} €
+                                    {{ number_format($item->price, 2, ',', ' ') }} â‚¬
                                 </td>
 
                                 <td>
@@ -192,7 +192,7 @@
                                 </td>
 
                                 <td>
-                                    {{ number_format($item->price * $item->quantity, 2, ',', ' ') }} €
+                                    {{ number_format($item->price * $item->quantity, 2, ',', ' ') }} â‚¬
                                 </td>
 
                             </tr>
@@ -218,7 +218,7 @@
 
             <h3>
                 Total :
-                {{ number_format($order->total, 2, ',', ' ') }} €
+                {{ number_format($order->total, 2, ',', ' ') }} â‚¬
             </h3>
 
         </div>
@@ -270,21 +270,21 @@
                                 value="paid"
                                 {{ $order->status === 'paid' ? 'selected' : '' }}
                             >
-                                Payée
+                                PayÃ©e
                             </option>
 
                             <option
                                 value="shipped"
                                 {{ $order->status === 'shipped' ? 'selected' : '' }}
                             >
-                                Expédiée
+                                ExpÃ©diÃ©e
                             </option>
 
                             <option
                                 value="cancelled"
                                 {{ $order->status === 'cancelled' ? 'selected' : '' }}
                             >
-                                Annulée
+                                AnnulÃ©e
                             </option>
 
                         </select>
@@ -297,7 +297,7 @@
                             type="submit"
                             class="btn btn-primary w-100"
                         >
-                            Mettre à jour le statut
+                            Mettre Ã  jour le statut
                         </button>
 
                     </div>

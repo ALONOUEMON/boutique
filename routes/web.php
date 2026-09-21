@@ -9,9 +9,23 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
+
+/*
+|--------------------------------------------------------------------------
+| Page d'accueil
+|--------------------------------------------------------------------------
+*/
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+/*
+|--------------------------------------------------------------------------
+| Dashboard utilisateur
+|--------------------------------------------------------------------------
+*/
 
 Route::get('/dashboard', function () {
 
@@ -22,6 +36,13 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
+/*
+|--------------------------------------------------------------------------
+| Profil utilisateur
+|--------------------------------------------------------------------------
+*/
 
 Route::middleware('auth')->group(function () {
 
@@ -35,30 +56,87 @@ Route::middleware('auth')->group(function () {
         ->name('profile.destroy');
 });
 
+
+/*
+|--------------------------------------------------------------------------
+| Administration
+|--------------------------------------------------------------------------
+*/
+
 Route::middleware(['auth', 'admin'])
     ->prefix('admin')
     ->name('admin.')
     ->group(function () {
 
+        /*
+        |--------------------------------------------------------------------------
+        | Dashboard administrateur
+        |--------------------------------------------------------------------------
+        */
+
         Route::get('/', function () {
             return view('admin.dashboard');
         })->name('dashboard');
 
+
+        /*
+        |--------------------------------------------------------------------------
+        | Gestion des catégories
+        |--------------------------------------------------------------------------
+        */
+
         Route::resource('categories', CategoryController::class);
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | Gestion des produits
+        |--------------------------------------------------------------------------
+        */
 
         Route::resource('products', ProductController::class);
 
+
+        /*
+        |--------------------------------------------------------------------------
+        | Gestion des utilisateurs
+        |--------------------------------------------------------------------------
+        */
+
         Route::resource('users', UserController::class);
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | Gestion des commandes
+        |--------------------------------------------------------------------------
+        */
 
         Route::get('/orders', [OrderAdminController::class, 'index'])
             ->name('orders.index');
+
+        Route::get('/orders/create', [OrderAdminController::class, 'create'])
+            ->name('orders.create');
+
+        Route::post('/orders', [OrderAdminController::class, 'store'])
+            ->name('orders.store');
 
         Route::get('/orders/{order}', [OrderAdminController::class, 'show'])
             ->name('orders.show');
 
         Route::post('/orders/{order}/status', [OrderAdminController::class, 'updateStatus'])
             ->name('orders.updateStatus');
+
+        Route::delete('/orders/{order}', [OrderAdminController::class, 'destroy'])
+            ->name('orders.destroy');
     });
+
+
+/*
+|--------------------------------------------------------------------------
+| Panier
+|--------------------------------------------------------------------------
+*/
 
 Route::get('/cart', [CartController::class, 'index'])
     ->name('cart.index');
@@ -71,6 +149,13 @@ Route::post('/cart/update/{product}', [CartController::class, 'update'])
 
 Route::post('/cart/remove/{product}', [CartController::class, 'remove'])
     ->name('cart.remove');
+
+
+/*
+|--------------------------------------------------------------------------
+| Commandes utilisateur
+|--------------------------------------------------------------------------
+*/
 
 Route::middleware('auth')->group(function () {
 
@@ -86,5 +171,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/orders/history', [OrderController::class, 'history'])
         ->name('order.history');
 });
+
+
+/*
+|--------------------------------------------------------------------------
+| Authentification Laravel
+|--------------------------------------------------------------------------
+*/
 
 require __DIR__.'/auth.php';

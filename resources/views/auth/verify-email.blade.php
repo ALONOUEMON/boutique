@@ -1,31 +1,55 @@
-<x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
+﻿<x-guest-layout>
+
+
+<div class="text-center mb-4">
+    <h2 class="fw-bold">VÃ©rification de l'adresse e-mail</h2>
+
+    <p class="text-muted mb-0">
+        Merci de vous Ãªtre inscrit ! Avant de continuer, veuillez vÃ©rifier
+        votre adresse e-mail en cliquant sur le lien que nous venons de vous envoyer.
+    </p>
+</div>
+
+<!-- Message de confirmation -->
+@if (session('status') == 'verification-link-sent')
+    <div class="alert alert-success" role="alert">
+        Un nouveau lien de vÃ©rification a Ã©tÃ© envoyÃ© Ã  l'adresse e-mail
+        indiquÃ©e lors de votre inscription.
     </div>
+@endif
 
-    @if (session('status') == 'verification-link-sent')
-        <div class="mb-4 font-medium text-sm text-green-600 dark:text-green-400">
-            {{ __('A new verification link has been sent to the email address you provided during registration.') }}
-        </div>
-    @endif
+<!-- Actions -->
+<div class="d-flex flex-column gap-3 mt-4">
 
-    <div class="mt-4 flex items-center justify-between">
-        <form method="POST" action="{{ route('verification.send') }}">
-            @csrf
+    <!-- Renvoyer l'e-mail -->
+    <form method="POST" action="{{ route('verification.send') }}">
+        @csrf
 
-            <div>
-                <x-primary-button>
-                    {{ __('Resend Verification Email') }}
-                </x-primary-button>
-            </div>
-        </form>
-
-        <form method="POST" action="{{ route('logout') }}">
-            @csrf
-
-            <button type="submit" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
-                {{ __('Log Out') }}
+        <div class="d-grid">
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Renvoyer l'e-mail de vÃ©rification
             </button>
-        </form>
-    </div>
+        </div>
+    </form>
+
+    <!-- DÃ©connexion -->
+    <form method="POST" action="{{ route('logout') }}">
+        @csrf
+
+        <div class="d-grid">
+            <button
+                type="submit"
+                class="btn btn-outline-secondary"
+            >
+                Se dÃ©connecter
+            </button>
+        </div>
+    </form>
+
+</div>
+
 </x-guest-layout>
+
