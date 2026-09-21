@@ -1,7 +1,7 @@
 ﻿<x-guest-layout>
 
     <div class="text-center mb-4">
-        <h2 class="fw-bold">CrÃ©er un compte</h2>
+        <h2 class="fw-bold">Créer un compte</h2>
         <p class="text-muted mb-0">
             Inscrivez-vous pour continuer
         </p>
@@ -108,7 +108,7 @@
                 href="{{ route('login') }}"
                 class="text-decoration-none"
             >
-                DÃ©jÃ  inscrit ?
+                Déjà inscrit ?
             </a>
 
             <button

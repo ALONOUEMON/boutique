@@ -6,9 +6,9 @@
         </h2>
 
         <p class="text-muted mb-0">
-            Une fois votre compte supprimÃ©, toutes ses ressources et donnÃ©es
-            seront dÃ©finitivement supprimÃ©es. Avant de supprimer votre compte,
-            pensez Ã  tÃ©lÃ©charger les donnÃ©es que vous souhaitez conserver.
+            Une fois votre compte supprimé, toutes ses ressources et données
+            seront définitivement supprimées. Avant de supprimer votre compte,
+            pensez à télécharger les données que vous souhaitez conserver.
         </p>
     </div>
 
@@ -33,7 +33,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
-                <!-- En-tÃªte -->
+                <!-- En-tête -->
                 <div class="modal-header">
                     <h5
                         class="modal-title fw-bold"
@@ -54,12 +54,12 @@
                 <div class="modal-body">
 
                     <p>
-                        ÃŠtes-vous sÃ»r de vouloir supprimer votre compte ?
+                        Êtes-vous sûr de vouloir supprimer votre compte ?
                     </p>
 
                     <p class="text-muted">
-                        Une fois votre compte supprimÃ©, toutes ses ressources
-                        et donnÃ©es seront dÃ©finitivement supprimÃ©es.
+                        Une fois votre compte supprimé, toutes ses ressources
+                        et données seront définitivement supprimées.
                         Entrez votre mot de passe pour confirmer.
                     </p>
 
@@ -114,7 +114,7 @@
                         form="deleteAccountForm"
                         class="btn btn-danger"
                     >
-                        Supprimer dÃ©finitivement
+                        Supprimer définitivement
                     </button>
 
                 </div>
@@ -123,7 +123,7 @@
         </div>
     </div>
 
-    {{-- RÃ©ouvrir automatiquement le modal s'il y a une erreur --}}
+    {{-- Réouvrir automatiquement le modal s'il y a une erreur --}}
     @if ($errors->userDeletion->isNotEmpty())
         <script>
             document.addEventListener('DOMContentLoaded', function () {

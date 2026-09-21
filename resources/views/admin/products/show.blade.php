@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DÃ©tail du produit</title>
+    <title>Détail du produit</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -16,7 +16,7 @@
 <div class="container py-5">
 
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>DÃ©tail du produit</h1>
+        <h1>Détail du produit</h1>
 
         <a href="{{ route('admin.products.index') }}"
            class="btn btn-secondary">
@@ -39,7 +39,7 @@
             <div class="mb-3">
                 <strong>Prix :</strong>
                 <span class="ms-2">
-                    {{ number_format($product->price, 2, ',', ' ') }} â‚¬
+                    {{ number_format($product->price, 2, ',', ' ') }} €
                 </span>
             </div>
 
@@ -51,7 +51,7 @@
             </div>
 
             <div class="mb-3">
-                <strong>CatÃ©gories :</strong>
+                <strong>Catégories :</strong>
 
                 <div class="mt-2">
                     @forelse($product->categories as $category)
@@ -60,7 +60,7 @@
                         </span>
                     @empty
                         <span class="text-muted">
-                            Aucune catÃ©gorie
+                            Aucune catégorie
                         </span>
                     @endforelse
                 </div>

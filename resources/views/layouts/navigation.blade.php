@@ -72,7 +72,7 @@
                             <hr class="dropdown-divider">
                         </li>
 
-                        <!-- DÃ©connexion -->
+                        <!-- Déconnexion -->
                         <li>
                             <form
                                 method="POST"
@@ -84,7 +84,7 @@
                                     type="submit"
                                     class="dropdown-item"
                                 >
-                                    DÃ©connexion
+                                    Déconnexion
                                 </button>
                             </form>
                         </li>

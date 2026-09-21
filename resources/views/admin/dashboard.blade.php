@@ -54,7 +54,7 @@
             href="{{ route('admin.dashboard') }}"
             class="navbar-brand fw-bold"
         >
-            ðŸ› ï¸ Administration
+            🛠️ Administration
         </a>
 
         <div class="d-flex align-items-center gap-2">
@@ -63,14 +63,14 @@
                 href="{{ url('/') }}"
                 class="btn btn-outline-light btn-sm"
             >
-                ðŸ  Boutique
+                🏠 Boutique
             </a>
 
             <a
                 href="{{ route('profile.edit') }}"
                 class="btn btn-outline-light btn-sm"
             >
-                ðŸ‘¤ {{ auth()->user()->name }}
+                👤 {{ auth()->user()->name }}
             </a>
 
             <form
@@ -84,7 +84,7 @@
                     type="submit"
                     class="btn btn-danger btn-sm"
                 >
-                    ðŸšª DÃ©connexion
+                    🚪 Déconnexion
                 </button>
             </form>
 
@@ -106,7 +106,7 @@
         </p>
 
         <p class="text-muted">
-            Vous Ãªtes connectÃ© en tant qu'administrateur.
+            Vous êtes connecté en tant qu'administrateur.
         </p>
     </div>
 
@@ -125,12 +125,12 @@
                 </h2>
 
                 <p class="mt-4 mb-0">
-                    GÃ©rer les produits de la boutique.
+                    Gérer les produits de la boutique.
                 </p>
 
                 <div class="mt-4">
                     <strong>
-                        â†’ GÃ©rer les produits
+                        → Gérer les produits
                     </strong>
                 </div>
             </a>
@@ -144,16 +144,16 @@
                 class="admin-card card-categories rounded p-4 shadow-sm"
             >
                 <h2 class="h3 fw-bold">
-                    CatÃ©gories
+                    Catégories
                 </h2>
 
                 <p class="mt-4 mb-0">
-                    GÃ©rer les catÃ©gories.
+                    Gérer les catégories.
                 </p>
 
                 <div class="mt-4">
                     <strong>
-                        â†’ GÃ©rer les catÃ©gories
+                        → Gérer les catégories
                     </strong>
                 </div>
             </a>
@@ -171,12 +171,12 @@
                 </h2>
 
                 <p class="mt-4 mb-0">
-                    GÃ©rer les utilisateurs.
+                    Gérer les utilisateurs.
                 </p>
 
                 <div class="mt-4">
                     <strong>
-                        â†’ GÃ©rer les utilisateurs
+                        → Gérer les utilisateurs
                     </strong>
                 </div>
             </a>
@@ -194,12 +194,12 @@
                 </h2>
 
                 <p class="mt-4 mb-0">
-                    GÃ©rer les commandes.
+                    Gérer les commandes.
                 </p>
 
                 <div class="mt-4">
                     <strong>
-                        â†’ GÃ©rer les commandes
+                        → Gérer les commandes
                     </strong>
                 </div>
             </a>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gestion des catÃ©gories</title>
+    <title>Gestion des catégories</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -18,7 +18,7 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
 
-        <h1>Gestion des catÃ©gories</h1>
+        <h1>Gestion des catégories</h1>
 
         <div class="d-flex gap-2">
 
@@ -33,7 +33,7 @@
                 href="{{ route('admin.categories.create') }}"
                 class="btn btn-primary"
             >
-                + Ajouter une catÃ©gorie
+                + Ajouter une catégorie
             </a>
 
         </div>
@@ -49,7 +49,7 @@
     @if ($categories->isEmpty())
 
         <div class="alert alert-info">
-            Aucune catÃ©gorie n'est enregistrÃ©e.
+            Aucune catégorie n'est enregistrée.
         </div>
 
     @else
@@ -112,7 +112,7 @@
                                         <form
                                             action="{{ route('admin.categories.destroy', $category) }}"
                                             method="POST"
-                                            onsubmit="return confirm('Voulez-vous vraiment supprimer cette catÃ©gorie ?');"
+                                            onsubmit="return confirm('Voulez-vous vraiment supprimer cette catégorie ?');"
                                         >
 
                                             @csrf

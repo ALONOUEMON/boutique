@@ -6,7 +6,7 @@
         </h2>
 
         <p class="text-muted mb-0">
-            Utilisez un mot de passe long et alÃ©atoire pour sÃ©curiser votre compte.
+            Utilisez un mot de passe long et aléatoire pour sécuriser votre compte.
         </p>
     </div>
 
@@ -101,7 +101,7 @@
 
             @if (session('status') === 'password-updated')
                 <span class="text-success">
-                    Mot de passe enregistrÃ©.
+                    Mot de passe enregistré.
                 </span>
             @endif
 

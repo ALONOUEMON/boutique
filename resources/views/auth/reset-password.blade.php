@@ -1,7 +1,7 @@
 ﻿<x-guest-layout>
 
     <div class="text-center mb-4">
-        <h2 class="fw-bold">RÃ©initialiser le mot de passe</h2>
+        <h2 class="fw-bold">Réinitialiser le mot de passe</h2>
 
         <p class="text-muted mb-0">
             Choisissez votre nouveau mot de passe.
@@ -11,7 +11,7 @@
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
 
-        <!-- Token de rÃ©initialisation -->
+        <!-- Token de réinitialisation -->
         <input
             type="hidden"
             name="token"
@@ -92,7 +92,7 @@
                 type="submit"
                 class="btn btn-primary"
             >
-                RÃ©initialiser le mot de passe
+                Réinitialiser le mot de passe
             </button>
         </div>
 
@@ -104,7 +104,7 @@
             href="{{ route('login') }}"
             class="text-decoration-none"
         >
-            â† Retour Ã  la connexion
+            ← Retour à la connexion
         </a>
     </div>
 

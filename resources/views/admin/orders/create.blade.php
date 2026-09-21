@@ -7,7 +7,7 @@
         content="width=device-width, initial-scale=1"
     >
 
-    <title>CrÃ©er une commande</title>
+    <title>Créer une commande</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -19,10 +19,10 @@
 
 <div class="container py-5">
 
-    {{-- EN-TÃŠTE --}}
+    {{-- EN-TÊTE --}}
     <div class="d-flex justify-content-between align-items-center mb-4">
 
-        <h1>CrÃ©er une commande</h1>
+        <h1>Créer une commande</h1>
 
         <a
             href="{{ route('admin.orders.index') }}"
@@ -39,7 +39,7 @@
 
         <div class="alert alert-danger">
 
-            <strong>Des erreurs sont prÃ©sentes :</strong>
+            <strong>Des erreurs sont présentes :</strong>
 
             <ul class="mb-0 mt-2">
 
@@ -84,7 +84,7 @@
                     >
 
                         <option value="">
-                            -- SÃ©lectionner un client --
+                            -- Sélectionner un client --
                         </option>
 
                         @foreach ($users as $user)
@@ -94,7 +94,7 @@
                                 {{ old('user_id') == $user->id ? 'selected' : '' }}
                             >
                                 {{ $user->name }}
-                                â€” {{ $user->email }}
+                                — {{ $user->email }}
                             </option>
 
                         @endforeach
@@ -132,21 +132,21 @@
                             value="paid"
                             {{ old('status') === 'paid' ? 'selected' : '' }}
                         >
-                            PayÃ©e
+                            Payée
                         </option>
 
                         <option
                             value="shipped"
                             {{ old('status') === 'shipped' ? 'selected' : '' }}
                         >
-                            ExpÃ©diÃ©e
+                            Expédiée
                         </option>
 
                         <option
                             value="cancelled"
                             {{ old('status') === 'cancelled' ? 'selected' : '' }}
                         >
-                            AnnulÃ©e
+                            Annulée
                         </option>
 
                     </select>
@@ -162,7 +162,7 @@
                     </h4>
 
                     <p class="text-muted">
-                        SÃ©lectionnez les produits et indiquez les quantitÃ©s.
+                        Sélectionnez les produits et indiquez les quantités.
                     </p>
 
 
@@ -207,8 +207,8 @@
                                                     <br>
 
                                                     <span class="text-muted">
-                                                        {{ number_format($product->price, 2, ',', ' ') }} â‚¬
-                                                        â€”
+                                                        {{ number_format($product->price, 2, ',', ' ') }} €
+                                                        —
                                                         Stock :
                                                         {{ $product->stock }}
                                                     </span>
@@ -220,14 +220,14 @@
                                         </div>
 
 
-                                        {{-- QUANTITÃ‰ --}}
+                                        {{-- QUANTITÉ --}}
                                         <div class="col-md-5 mt-3 mt-md-0">
 
                                             <label
                                                 for="quantity{{ $product->id }}"
                                                 class="form-label"
                                             >
-                                                QuantitÃ©
+                                                Quantité
                                             </label>
 
                                             <input
@@ -262,7 +262,7 @@
                         type="submit"
                         class="btn btn-success"
                     >
-                        CrÃ©er la commande
+                        Créer la commande
                     </button>
 
                     <a

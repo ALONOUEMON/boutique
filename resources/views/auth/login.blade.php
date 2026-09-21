@@ -3,7 +3,7 @@
     <div class="text-center mb-4">
         <h2 class="fw-bold">Connexion</h2>
         <p class="text-muted mb-0">
-            Connectez-vous Ã  votre compte
+            Connectez-vous à votre compte
         </p>
     </div>
 
@@ -76,14 +76,14 @@
             </label>
         </div>
 
-        <!-- Mot de passe oubliÃ© -->
+        <!-- Mot de passe oublié -->
         @if (Route::has('password.request'))
             <div class="mb-3 text-end">
                 <a
                     href="{{ route('password.request') }}"
                     class="text-decoration-none"
                 >
-                    Mot de passe oubliÃ© ?
+                    Mot de passe oublié ?
                 </a>
             </div>
         @endif

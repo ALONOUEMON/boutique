@@ -79,7 +79,7 @@
 
             <div class="card-header">
                 <h4 class="mb-0">
-                    RÃ©capitulatif de votre commande
+                    Récapitulatif de votre commande
                 </h4>
             </div>
 
@@ -94,7 +94,7 @@
                             <tr>
                                 <th>Produit</th>
                                 <th>Prix unitaire</th>
-                                <th>QuantitÃ©</th>
+                                <th>Quantité</th>
                                 <th>Total</th>
                             </tr>
 
@@ -120,7 +120,7 @@
                                     </td>
 
                                     <td>
-                                        {{ number_format($item->product->price, 2, ',', ' ') }} â‚¬
+                                        {{ number_format($item->product->price, 2, ',', ' ') }} €
                                     </td>
 
                                     <td>
@@ -129,7 +129,7 @@
 
                                     <td>
                                         <strong>
-                                            {{ number_format($lineTotal, 2, ',', ' ') }} â‚¬
+                                            {{ number_format($lineTotal, 2, ',', ' ') }} €
                                         </strong>
                                     </td>
 
@@ -157,11 +157,11 @@
                 <div class="d-flex justify-content-between align-items-center mb-4">
 
                     <h3>
-                        Total Ã  payer
+                        Total à payer
                     </h3>
 
                     <h2 class="text-success">
-                        {{ number_format($total, 2, ',', ' ') }} â‚¬
+                        {{ number_format($total, 2, ',', ' ') }} €
                     </h2>
 
                 </div>
@@ -179,8 +179,8 @@
                         <strong>Confirmation</strong>
 
                         <p class="mb-0 mt-2">
-                            En cliquant sur Â« Confirmer la commande Â»,
-                            votre commande sera enregistrÃ©e.
+                            En cliquant sur « Confirmer la commande »,
+                            votre commande sera enregistrée.
                         </p>
 
                     </div>

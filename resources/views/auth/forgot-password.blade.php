@@ -1,11 +1,11 @@
 ﻿<x-guest-layout>
 
     <div class="text-center mb-4">
-        <h2 class="fw-bold">Mot de passe oubliÃ©</h2>
+        <h2 class="fw-bold">Mot de passe oublié</h2>
 
         <p class="text-muted mb-0">
             Entrez votre adresse e-mail et nous vous enverrons un lien
-            pour rÃ©initialiser votre mot de passe.
+            pour réinitialiser votre mot de passe.
         </p>
     </div>
 
@@ -49,7 +49,7 @@
                 type="submit"
                 class="btn btn-primary"
             >
-                Envoyer le lien de rÃ©initialisation
+                Envoyer le lien de réinitialisation
             </button>
         </div>
 
@@ -61,7 +61,7 @@
             href="{{ route('login') }}"
             class="text-decoration-none"
         >
-            â† Retour Ã  la connexion
+            ← Retour à la connexion
         </a>
     </div>
 

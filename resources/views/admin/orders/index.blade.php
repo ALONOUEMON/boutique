@@ -26,7 +26,7 @@
 <div class="container py-5">
 
 
-    {{-- EN-TÃŠTE --}}
+    {{-- EN-TÊTE --}}
     <div class="d-flex justify-content-between align-items-center mb-4">
 
         <div>
@@ -36,7 +36,7 @@
             </h1>
 
             <p class="text-muted mb-0">
-                Consultez et gÃ©rez les commandes des clients.
+                Consultez et gérez les commandes des clients.
             </p>
 
         </div>
@@ -64,7 +64,7 @@
     </div>
 
 
-    {{-- MESSAGE DE SUCCÃˆS --}}
+    {{-- MESSAGE DE SUCCÈS --}}
     @if (session('success'))
 
         <div class="alert alert-success alert-dismissible fade show">
@@ -138,7 +138,7 @@
                 </h4>
 
                 <p class="text-muted">
-                    Aucune commande n'est actuellement enregistrÃ©e.
+                    Aucune commande n'est actuellement enregistrée.
                 </p>
 
 
@@ -146,7 +146,7 @@
                     href="{{ route('admin.orders.create') }}"
                     class="btn btn-success"
                 >
-                    CrÃ©er une commande
+                    Créer une commande
                 </a>
 
             </div>
@@ -244,7 +244,7 @@
                                     @else
 
                                         <span class="text-danger">
-                                            Utilisateur supprimÃ©
+                                            Utilisateur supprimé
                                         </span>
 
                                     @endif
@@ -256,7 +256,7 @@
                                 <td>
 
                                     <strong>
-                                        {{ number_format($order->total, 2, ',', ' ') }} â‚¬
+                                        {{ number_format($order->total, 2, ',', ' ') }} €
                                     </strong>
 
                                 </td>
@@ -276,21 +276,21 @@
                                     @elseif ($order->status === 'paid')
 
                                         <span class="badge bg-success">
-                                            PayÃ©e
+                                            Payée
                                         </span>
 
 
                                     @elseif ($order->status === 'shipped')
 
                                         <span class="badge bg-primary">
-                                            ExpÃ©diÃ©e
+                                            Expédiée
                                         </span>
 
 
                                     @elseif ($order->status === 'cancelled')
 
                                         <span class="badge bg-danger">
-                                            AnnulÃ©e
+                                            Annulée
                                         </span>
 
 

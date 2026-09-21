@@ -17,14 +17,14 @@
 <div class="container py-5">
 
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>ðŸ›’ Votre panier</h1>
+        <h1>🛒 Votre panier</h1>
 
         <a href="{{ url('/') }}" class="btn btn-secondary">
             Continuer mes achats
         </a>
     </div>
 
-    {{-- Message de succÃ¨s --}}
+    {{-- Message de succès --}}
     @if(session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -60,7 +60,7 @@
                 <h3>Votre panier est vide</h3>
 
                 <p class="text-muted">
-                    Vous n'avez encore ajoutÃ© aucun produit Ã  votre panier.
+                    Vous n'avez encore ajouté aucun produit à votre panier.
                 </p>
 
                 <a href="{{ url('/') }}" class="btn btn-primary">
@@ -89,7 +89,7 @@
                             <tr>
                                 <th>Produit</th>
                                 <th>Prix unitaire</th>
-                                <th>QuantitÃ©</th>
+                                <th>Quantité</th>
                                 <th>Total</th>
                                 <th>Actions</th>
                             </tr>
@@ -130,10 +130,10 @@
 
                                     {{-- Prix --}}
                                     <td>
-                                        {{ number_format($product->price, 2, ',', ' ') }} â‚¬
+                                        {{ number_format($product->price, 2, ',', ' ') }} €
                                     </td>
 
-                                    {{-- QuantitÃ© --}}
+                                    {{-- Quantité --}}
                                     <td>
 
                                         <form
@@ -174,7 +174,7 @@
                                     {{-- Total ligne --}}
                                     <td>
                                         <strong>
-                                            {{ number_format($lineTotal, 2, ',', ' ') }} â‚¬
+                                            {{ number_format($lineTotal, 2, ',', ' ') }} €
                                         </strong>
                                     </td>
 
@@ -228,7 +228,7 @@
                     </h4>
 
                     <h3 class="mb-0 text-success">
-                        {{ number_format($total, 2, ',', ' ') }} â‚¬
+                        {{ number_format($total, 2, ',', ' ') }} €
                     </h3>
 
                 </div>
@@ -252,7 +252,7 @@
 
                     <div class="alert alert-warning mb-0">
 
-                        Vous devez Ãªtre connectÃ© pour valider votre commande.
+                        Vous devez être connecté pour valider votre commande.
 
                         <a
                             href="{{ route('login') }}"

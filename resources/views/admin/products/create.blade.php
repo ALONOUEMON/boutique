@@ -35,7 +35,7 @@
         <h1>Ajouter un produit</h1>
 
         <p class="text-muted">
-            Ajouter un nouveau produit Ã  la boutique.
+            Ajouter un nouveau produit à la boutique.
         </p>
 
     </div>
@@ -108,7 +108,7 @@
                     <div class="col-md-6 mb-3">
 
                         <label for="price" class="form-label">
-                            Prix (â‚¬)
+                            Prix (€)
                         </label>
 
                         <input
@@ -164,7 +164,7 @@
                 <div class="mb-4">
 
                     <label class="form-label">
-                        CatÃ©gories
+                        Catégories
                     </label>
 
                     @forelse($categories as $category)
@@ -192,7 +192,7 @@
                     @empty
 
                         <div class="alert alert-warning">
-                            Aucune catÃ©gorie n'existe encore.
+                            Aucune catégorie n'existe encore.
                         </div>
 
                     @endforelse

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Commande confirmÃ©e</title>
+    <title>Commande confirmée</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -22,11 +22,11 @@
         <div class="card-body text-center py-5">
 
             <div class="mb-4">
-                <span class="display-1">âœ…</span>
+                <span class="display-1">✅</span>
             </div>
 
             <h1 class="text-success">
-                Commande confirmÃ©e !
+                Commande confirmée !
             </h1>
 
             <p class="lead mt-3">
@@ -36,7 +36,7 @@
             <p>
                 Votre commande
                 <strong>#{{ $order->id }}</strong>
-                a bien Ã©tÃ© enregistrÃ©e.
+                a bien été enregistrée.
             </p>
 
         </div>
@@ -48,7 +48,7 @@
 
         <div class="card-header">
             <h4 class="mb-0">
-                RÃ©capitulatif de la commande
+                Récapitulatif de la commande
             </h4>
         </div>
 
@@ -57,7 +57,7 @@
             <div class="row mb-4">
 
                 <div class="col-md-6">
-                    <strong>NumÃ©ro de commande :</strong>
+                    <strong>Numéro de commande :</strong>
                     #{{ $order->id }}
                 </div>
 
@@ -70,15 +70,15 @@
                         </span>
                     @elseif($order->status === 'paid')
                         <span class="badge bg-success">
-                            PayÃ©e
+                            Payée
                         </span>
                     @elseif($order->status === 'shipped')
                         <span class="badge bg-primary">
-                            ExpÃ©diÃ©e
+                            Expédiée
                         </span>
                     @elseif($order->status === 'cancelled')
                         <span class="badge bg-danger">
-                            AnnulÃ©e
+                            Annulée
                         </span>
                     @else
                         <span class="badge bg-secondary">
@@ -100,7 +100,7 @@
                         <tr>
                             <th>Produit</th>
                             <th>Prix</th>
-                            <th>QuantitÃ©</th>
+                            <th>Quantité</th>
                             <th>Total</th>
                         </tr>
 
@@ -119,7 +119,7 @@
                                 </td>
 
                                 <td>
-                                    {{ number_format($item->price, 2, ',', ' ') }} â‚¬
+                                    {{ number_format($item->price, 2, ',', ' ') }} €
                                 </td>
 
                                 <td>
@@ -128,7 +128,7 @@
 
                                 <td>
                                     <strong>
-                                        {{ number_format($item->price * $item->quantity, 2, ',', ' ') }} â‚¬
+                                        {{ number_format($item->price * $item->quantity, 2, ',', ' ') }} €
                                     </strong>
                                 </td>
 
@@ -150,7 +150,7 @@
                 <h3>
                     Total :
                     <span class="text-success">
-                        {{ number_format($order->total, 2, ',', ' ') }} â‚¬
+                        {{ number_format($order->total, 2, ',', ' ') }} €
                     </span>
                 </h3>
 
@@ -174,7 +174,7 @@
             href="{{ url('/') }}"
             class="btn btn-secondary"
         >
-            Retour Ã  la boutique
+            Retour à la boutique
         </a>
 
     </div>

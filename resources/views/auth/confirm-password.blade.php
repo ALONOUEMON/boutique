@@ -5,7 +5,7 @@
     <h2 class="fw-bold">Confirmer le mot de passe</h2>
 
     <p class="text-muted mb-0">
-        Cette zone est sÃ©curisÃ©e. Veuillez confirmer votre mot de passe
+        Cette zone est sécurisée. Veuillez confirmer votre mot de passe
         avant de continuer.
     </p>
 </div>

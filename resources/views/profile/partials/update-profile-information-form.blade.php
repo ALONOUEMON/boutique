@@ -10,7 +10,7 @@
         </p>
     </div>
 
-    <!-- Formulaire de renvoi de vÃ©rification -->
+    <!-- Formulaire de renvoi de vérification -->
     <form
         id="send-verification"
         method="post"
@@ -74,13 +74,13 @@
             @enderror
         </div>
 
-        <!-- VÃ©rification de l'adresse e-mail -->
+        <!-- Vérification de l'adresse e-mail -->
         @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
 
             <div class="alert alert-warning" role="alert">
 
                 <p class="mb-2">
-                    Votre adresse e-mail n'est pas encore vÃ©rifiÃ©e.
+                    Votre adresse e-mail n'est pas encore vérifiée.
                 </p>
 
                 <button
@@ -88,12 +88,12 @@
                     type="submit"
                     class="btn btn-link p-0 text-decoration-none"
                 >
-                    Renvoyer l'e-mail de vÃ©rification
+                    Renvoyer l'e-mail de vérification
                 </button>
 
                 @if (session('status') === 'verification-link-sent')
                     <div class="alert alert-success mt-3 mb-0">
-                        Un nouveau lien de vÃ©rification a Ã©tÃ© envoyÃ© Ã  votre adresse e-mail.
+                        Un nouveau lien de vérification a été envoyé à votre adresse e-mail.
                     </div>
                 @endif
 
@@ -113,7 +113,7 @@
 
             @if (session('status') === 'profile-updated')
                 <span class="text-success">
-                    EnregistrÃ©.
+                    Enregistré.
                 </span>
             @endif
 

@@ -28,7 +28,7 @@
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Des erreurs sont prÃ©sentes :</strong>
+            <strong>Des erreurs sont présentes :</strong>
 
             <ul class="mb-0 mt-2">
                 @foreach ($errors->all() as $error)
@@ -92,7 +92,7 @@
                     >
 
                     <div class="form-text">
-                        Minimum 8 caractÃ¨res.
+                        Minimum 8 caractères.
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
 
                 <div class="mb-4">
                     <label for="role" class="form-label">
-                        RÃ´le
+                        Rôle
                     </label>
 
                     <select
@@ -137,7 +137,7 @@
                         type="submit"
                         class="btn btn-primary"
                     >
-                        CrÃ©er l'utilisateur
+                        Créer l'utilisateur
                     </button>
 
                     <a

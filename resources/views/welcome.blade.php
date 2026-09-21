@@ -32,7 +32,7 @@
                 href="{{ route('cart.index') }}"
                 class="btn btn-outline-light"
             >
-                ðŸ›’ Panier
+                🛒 Panier
             </a>
 
             @auth
@@ -59,7 +59,7 @@
                         type="submit"
                         class="btn btn-danger"
                     >
-                        DÃ©connexion
+                        Déconnexion
                     </button>
                 </form>
 
@@ -122,7 +122,7 @@
         </h1>
 
         <p class="text-muted">
-            DÃ©couvrez les produits disponibles dans notre boutique.
+            Découvrez les produits disponibles dans notre boutique.
         </p>
 
     </div>
@@ -200,7 +200,7 @@
 
                                 <h4 class="text-success mb-2">
 
-                                    {{ number_format($product->price, 2, ',', ' ') }} â‚¬
+                                    {{ number_format($product->price, 2, ',', ' ') }} €
 
                                 </h4>
 

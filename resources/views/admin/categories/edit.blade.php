@@ -7,7 +7,7 @@
         content="width=device-width, initial-scale=1"
     >
 
-    <title>Modifier la catÃ©gorie</title>
+    <title>Modifier la catégorie</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -21,13 +21,13 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
 
-        <h1>Modifier la catÃ©gorie</h1>
+        <h1>Modifier la catégorie</h1>
 
         <a
             href="{{ route('admin.categories.index') }}"
             class="btn btn-secondary"
         >
-            Retour aux catÃ©gories
+            Retour aux catégories
         </a>
 
     </div>
@@ -38,7 +38,7 @@
 
         <div class="alert alert-danger">
 
-            <strong>Des erreurs sont prÃ©sentes :</strong>
+            <strong>Des erreurs sont présentes :</strong>
 
             <ul class="mb-0 mt-2">
 
@@ -74,7 +74,7 @@
                         for="name"
                         class="form-label"
                     >
-                        Nom de la catÃ©gorie
+                        Nom de la catégorie
                     </label>
 
                     <input
@@ -113,12 +113,12 @@
                 <div class="mb-4">
 
                     <h4 class="mb-3">
-                        Produits de cette catÃ©gorie
+                        Produits de cette catégorie
                     </h4>
 
                     <p class="text-muted">
-                        SÃ©lectionnez les produits qui doivent appartenir
-                        Ã  cette catÃ©gorie.
+                        Sélectionnez les produits qui doivent appartenir
+                        à cette catégorie.
                     </p>
 
 
@@ -159,7 +159,7 @@
                                             <br>
 
                                             <small class="text-muted">
-                                                {{ number_format($product->price, 2, ',', ' ') }} â‚¬
+                                                {{ number_format($product->price, 2, ',', ' ') }} €
                                             </small>
 
                                         </label>

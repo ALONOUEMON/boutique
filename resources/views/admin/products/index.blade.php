@@ -49,7 +49,7 @@
     @if ($products->isEmpty())
 
         <div class="alert alert-info">
-            Aucun produit n'est enregistrÃ©.
+            Aucun produit n'est enregistré.
         </div>
 
     @else
@@ -68,7 +68,7 @@
                                 <th>Nom</th>
                                 <th>Prix</th>
                                 <th>Stock</th>
-                                <th>CatÃ©gories</th>
+                                <th>Catégories</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -90,7 +90,7 @@
                                 </td>
 
                                 <td>
-                                    {{ number_format($product->price, 2, ',', ' ') }} â‚¬
+                                    {{ number_format($product->price, 2, ',', ' ') }} €
                                 </td>
 
                                 <td>
@@ -108,7 +108,7 @@
                                     @empty
 
                                         <span class="text-muted">
-                                            Aucune catÃ©gorie
+                                            Aucune catégorie
                                         </span>
 
                                     @endforelse

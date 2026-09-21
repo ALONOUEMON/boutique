@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ajouter une catÃ©gorie</title>
+    <title>Ajouter une catégorie</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -30,10 +30,10 @@
 
 <div class="container py-5">
 
-    <h1>Ajouter une catÃ©gorie</h1>
+    <h1>Ajouter une catégorie</h1>
 
     <p class="text-muted">
-        CrÃ©er une nouvelle catÃ©gorie pour la boutique.
+        Créer une nouvelle catégorie pour la boutique.
     </p>
 
     @if ($errors->any())
@@ -68,7 +68,7 @@
                 <div class="mb-3">
 
                     <label for="name" class="form-label">
-                        Nom de la catÃ©gorie
+                        Nom de la catégorie
                     </label>
 
                     <input
@@ -101,7 +101,7 @@
                     type="submit"
                     class="btn btn-primary"
                 >
-                    Ajouter la catÃ©gorie
+                    Ajouter la catégorie
                 </button>
 
                 <a

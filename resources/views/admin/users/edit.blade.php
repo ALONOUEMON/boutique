@@ -28,7 +28,7 @@
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Des erreurs sont prÃ©sentes :</strong>
+            <strong>Des erreurs sont présentes :</strong>
 
             <ul class="mb-0 mt-2">
                 @foreach ($errors->all() as $error)
@@ -93,7 +93,7 @@
 
                     <div class="form-text">
                         Laisse vide pour conserver le mot de passe actuel.
-                        Minimum 8 caractÃ¨res si tu souhaites le modifier.
+                        Minimum 8 caractères si tu souhaites le modifier.
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
 
                 <div class="mb-4">
                     <label for="role" class="form-label">
-                        RÃ´le
+                        Rôle
                     </label>
 
                     <select
